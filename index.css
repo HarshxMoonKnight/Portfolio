@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    border-bottom: 10px solid black;
+}
+
+#about {
+    border-top: 10px solid black;
+}
+
+#about {
+    border-bottom: 10px solid black;
+}
+
+#services {
+    border-top: 10px solid black;
+}
+
+
+
+/* ========= ALL ==========*/
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2025/03/assassin-s-creed-shadows-beautiful-world-view-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.logo {
+    margin-top: 10px;
+    height: 100px;
+    width: 280px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #080808;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+#about {
+    background-image: url('https://www.gamewallpapers.com/download.php?img=wallpaper_assassins_creed_shadows_06_1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    height: 550px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+ .tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+
+ }
+ .tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+ }
+ 
+ .tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+ }
+
+ .tab-links.active-link::after {
+   width: 50%; 
+ }
+ 
+ .tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+ }
+
+  .tab-contents ul li span {
+    color: #6315e9;
+    font-size: 14px;
+  }
+
+  .tab-contents {
+    display: none;
+  }
+
+  .tab-contents.active-tab {
+    display: block;
+  }
+
+
+  /* ===== services ===== */
+
+  
+  #services {
+    padding: 30px 0;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+
+
+
+  #services {
+    background: #000;
+    color: #fff;
+    padding: 50px 0;
+    font-family: sans-serif;
+}
+
+#services .container {
+    width: 80%;
+    margin: auto;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.services-list > div {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33.33% - 30px);
+    min-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services-list > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    background-color: #ff004f;
+}
+
+.services-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-list p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.services-list a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services-list a:hover {
+    text-decoration: underline;
+}
+
+
+#services {
+    background: url('https://images4.alphacoders.com/136/1362735.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 0;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+#services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    z-index: -1;
+}
+
+
+/* portfolio */
+
+
+#Portfolio {
+    background: url('https://img.g2a.com/700x394/1x1x0/assassins-creed-shadows-standard-vs-digital-deluxe-edition-guide/447c4c4079814244bd76ac70') no-repeat center center/cover;
+    color: #fff;
+    padding: 50px 0;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ✅ Fixed missing comma */
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px; /* ✅ Moved semicolon inline for consistency */
+    position: relative;
+    overflow: hidden;
+}
+
+#b{
+    height: 380px;
+}
+
+.work img {
+    border-radius: 10px;
+    display: block;
+    width: 100%; /* ✅ Ensures images fill the container */
+    height: auto; /* ✅ Maintains aspect ratio */
+    object-fit: cover; /* ✅ Makes images look cleaner if they're not perfectly sized */
+    transition:transform 0.5s;
+}
+
+.layer {
+    margin-top: 10px;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition:height 1s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover {
+    transform:scale(1.1) ;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px soild #ff004f;
+    padding: 14px 50px ;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+} 
+
+
+/* ==========contact========== */
+
+
+#contact {
+    padding: 60px 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-left,
+.contact-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-left p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffcc;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #00c6a3;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+}
+
+.from .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
